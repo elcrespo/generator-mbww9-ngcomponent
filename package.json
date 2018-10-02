@@ -1,0 +1,31 @@
+{
+  "name": "generator-mbww9-ngcomponent",
+  "version": "0.0.1",
+  "description": "Ang comp gen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcrespo/generator-mbww9-ngcomponent.git"
+  },
+  "keywords": [
+    "gen",
+    "ang"
+  ],
+  "author": "elcrespo <caliche442@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elcrespo/generator-mbww9-ngcomponent/issues"
+  },
+  "homepage": "https://github.com/elcrespo/generator-mbww9-ngcomponent#readme",
+  "dependencies": {
+    "decamelize": "^2.0.0",
+    "uppercamelcase": "^3.0.0",
+    "yeoman-generator": "^3.1.1"
+  },
+  "files": [
+    "app"
+  ]
+}
