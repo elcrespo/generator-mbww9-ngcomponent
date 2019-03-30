@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: '<%= selector %>',
-  template: require('./<%= selector %>.component.html'),
-  styles: [require('./<%= selector %>.component.scss')]
+  selector: 'atv-<%= selector %>',
+  templateUrl: './<%= selector %>.component.html',
+  styleUrls: ['./<%= selector %>.component.scss']
 })
 
 export class <%= className %> implements OnInit {

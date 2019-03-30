@@ -15,7 +15,7 @@ module.exports = class extends Generator {
         {
           type    : 'input',
           name    : 'name',
-          message : 'Enter a name for the new component (i.e.: myNewComponent): '
+          message : 'Enter a name for the new component (i.e.: networksEdit): '
         }
       ]).then( (answers) => {
         // create destination folder
@@ -24,15 +24,15 @@ module.exports = class extends Generator {
         this.fs.copyTpl(
             this.templatePath('index.html'),
             this.destinationPath(nameDecamelized + '.component.html'),
-            { 
+            {
                 selector: nameDecamelized
             }
           );
         this.fs.copyTpl(
             this.templatePath('component.ts'),
             this.destinationPath(nameDecamelized + '.component.ts'),
-            { 
-                className: upperCamelCase(answers.name),
+            {
+                className: upperCamelCase(answers.name) + 'Component',
                 selector: nameDecamelized
             }
           );
@@ -40,7 +40,7 @@ module.exports = class extends Generator {
         this.fs.copyTpl(
             this.templatePath('component.scss'),
             this.destinationPath(nameDecamelized + '.component.scss'),
-            { 
+            {
                 selector: nameDecamelized
             }
           );
@@ -48,7 +48,7 @@ module.exports = class extends Generator {
         this.fs.copyTpl(
             this.templatePath('component.spec.ts'),
             this.destinationPath(nameDecamelized + '.component.spec.ts'),
-            { 
+            {
                 className: upperCamelCase(answers.name),
                 selector: nameDecamelized
             }
