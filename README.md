@@ -15,5 +15,7 @@ Since you’re developing the generator locally, it’s not yet available as a g
 `cd generator-mbww9-ngcomponent/`
 `npm link`
 
+That will install your project dependencies and symlink a global module to your local file.
+
 ## Use it
 `yo mbww9-ngcomponent`
