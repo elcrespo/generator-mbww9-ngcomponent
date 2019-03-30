@@ -49,7 +49,7 @@ module.exports = class extends Generator {
             this.templatePath('component.spec.ts'),
             this.destinationPath(nameDecamelized + '.component.spec.ts'),
             {
-                className: upperCamelCase(answers.name),
+                className: upperCamelCase(answers.name) + 'Component',
                 selector: nameDecamelized
             }
           );
